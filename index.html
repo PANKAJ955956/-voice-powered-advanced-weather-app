@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/weather.svg" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo" class="vid">
+        <source src="" type="video/mp4" class="src">
+    </video>
+
+    <div class="click">
+        <div class="voice1 btn1" id="volumex">
+            <img src="img/Cross.png" class="xmark hidden" alt="Volume Off">
+            <img src="img/HIGH.png" class="volo" alt="Volume On">
+        </div>
+        <div class="voice2 btn1" id="videox">
+            <img src="img/video-slash-solid.svg" class="slash hidden" alt="Video Off">
+            <img src="img/video-solid.svg" class="vide" alt="Video On">
+        </div>
+        <div class="theme-toggle btn1" id="themeToggle">
+            <img src="img/light.png" class="sun" alt="Light Mode">
+            <img src="img/light.png" class="moon hidden" alt="Dark Mode">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <p id="date-time"></p>
+
+        <div class="tab-container">
+            <div class="your-weather tab">Your Weather</div>
+            <div class="search-weather tab">Search Weather</div>
+        </div>
+
+        <div class="weather-container">
+            <div class="grant-location">
+                <img src="./img/location.webp" alt="location" width="80" height="80">
+                <p>Grant Location Access</p>
+                <p>Allow Access To Get Weather Information</p>
+                <button class="btn loc">Grant Access</button>
+            </div>
+
+            <div class="error">
+                <img src="./img/error.png" width="80" height="80">
+                <p>ERROR 404</p>
+                <p>Connection Error</p>
+            </div>
+
+            <div class="loading">
+                <img src="./img/loading.gif" alt="loading" height="120" width="120">
+                <p>Loading...</p>
+            </div>
+
+            <form id="search-tab">
+                <input placeholder="Search For City..." input-field>
+                <button class="btn" type="submit" btn-search>
+                    <img src="img/magnifying-glass-solid.svg" alt="search" width="20" height="20">
+                </button>
+            </form>
+
+            <div class="user-info">
+                <div class="name">
+                    <p city-name></p>
+                    <img country-icon>
+                </div>
+                <p weather-desc id="weather-desc"></p>
+                <img weather-icon id="weather-icon">
+                <p temp id="temp"></p>
+
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <img src="img/wind.png" alt="wind" height="50" width="50">
+                        <p>Wind Speed</p>
+                        <p windspeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="img/humidity.jpg" alt="humidity" height="50" width="50">
+                        <p>Humidity</p>
+                        <p humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="img/cloud.png" alt="cloud" height="50" width="50">
+                        <p>Clouds</p>
+                        <p cloud></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="img/pressure.png" alt="pressure" height="50" width="50">
+                        <p>Pressure</p>
+                        <p pressure></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="img/sunrise.jpg" alt="sunrise" height="50" width="50">
+                        <p>Sunrise</p>
+                        <p sunrise></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="img/sunset.jpg" alt="sunset" height="50" width="50">
+                        <p>Sunset</p>
+                        <p sunset></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-and-advisory-container hidden">
+                <div class="forecast">
+                    <h2>5-Day Forecast</h2>
+                    <div class="forecast-container">
+                        </div>
+                </div>
+
+                <div class="weather-tip">
+                    <h2>Today's Advisory</h2>
+                    <p id="advisory">Fetching advice...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
