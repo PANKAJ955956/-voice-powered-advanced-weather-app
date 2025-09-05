@@ -1,6 +1,7 @@
 # 🌦️ Voice-Powered Weather App  
 
 A **responsive and interactive Weather Application** that allows users to check real-time weather conditions for any location worldwide. The app provides **voice-powered weather forecasting**, **dynamic backgrounds**, and **user-friendly controls** for an engaging experience.  
+<img width="1548" height="747" alt="Screenshot 2025-09-05 194215" src="https://github.com/user-attachments/assets/d3641cc2-22a8-43f6-9686-74903d94a657" />
 
 ---
 
@@ -9,10 +10,12 @@ A **responsive and interactive Weather Application** that allows users to check 
 ### 🎨 User Interface  
 - Clean and visually appealing interface.  
 - Sections: Header, Search tab, User tab, Weather display, Background control, Voice assistant.  
+<img width="1912" height="865" alt="Screenshot 2025-09-05 233322" src="https://github.com/user-attachments/assets/d4ddb19d-bef4-4b50-85c1-f2454545bf4d" />
 
 ### 📍 Location Input  
 - **Search Bar**: Enter any city name to get weather updates.  
 - **User Location**: Fetch weather data automatically using Geolocation API.  
+<img width="1915" height="856" alt="Screenshot 2025-09-05 233339" src="https://github.com/user-attachments/assets/aac00787-ff74-48d1-82fd-779d703b38f3" />
 
 ### 🌤 Weather Display  
 - Current **temperature, conditions, humidity, wind speed, cloud coverage**.  
@@ -22,6 +25,7 @@ A **responsive and interactive Weather Application** that allows users to check 
 ### 🖼 Dynamic Backgrounds  
 - Background updates dynamically based on weather (sunny, cloudy, rainy, etc.).  
 - **User control** to enable/disable dynamic backgrounds.  
+<img width="1912" height="865" alt="Screenshot 2025-09-05 233322" src="https://github.com/user-attachments/assets/35768322-f784-4ff8-b79e-0bb127cf320b" />
 
 ### 🎙 Voice-Powered Forecast  
 - Listen to weather reports via **Speech Synthesis API**.  
@@ -42,6 +46,7 @@ A **responsive and interactive Weather Application** that allows users to check 
 
 ### 📱 Responsive Design  
 - Fully responsive across **desktops, tablets, and mobile devices**.  
+<img width="1919" height="868" alt="Screenshot 2025-09-05 233230" src="https://github.com/user-attachments/assets/9e65647d-0ad4-4c5d-b778-9d111e79cd94" />
 
 ---
 
